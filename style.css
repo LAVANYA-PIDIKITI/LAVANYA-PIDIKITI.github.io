@@ -1,0 +1,107 @@
+.map-image{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 800;
+  height: 600;
+}
+
+.body{
+ font-family: "Lucida Console", "Courier New", monospace;
+}
+
+.heading{
+  text-align: center;
+}
+
+.para{
+  text-align: center;
+}
+
+a{
+  text-decoration: none;
+}
+
+.e-buttons{
+  display: block;
+  z-index: 1;
+  margin-left: 40pt;
+  border-radius: 12px;
+  border-width: 0;
+  box-shadow: rgba(25, 25, 25, 0.04) 0 0 1px 0, rgba(0, 0, 0, 0.1) 0 3px 4px 0;
+
+  cursor: pointer;
+  font-family: Arial, sans-serif;
+  font-size: 1em;
+  color: #008000;
+  height: 50px;
+  padding: 0 25px;
+  transition: all 200ms;
+    background-color: #ff8000;
+}
+
+.e-buttons:hover{
+  background-color: #ffa64d;
+transform: scale(1.05);
+}
+
+.exp{
+  padding : 10px;
+}
+
+header a {
+  text-decoration: none;
+}
+
+header {
+  padding: 0 20px;
+  height: 50px;
+  display: center;
+  justify-content: space-between;
+  font-size: 20pt;
+}
+
+ul {
+  list-style: none;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+ul a {
+  color: white;
+}
+
+ul li {
+  padding: 5px;
+  margin-left: 10px;
+}
+
+ul li:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+
+.t-frame{
+  top: 20px;
+  width:100% ;
+  display: block;
+}
+
+.col-frame{
+  flex-direction: row;
+  width: calc(100% - 100px);
+}
+
+.l-frame{
+  width:39%;
+  float:left;
+  height:100%;
+ }
+
+.r-frame{
+  width:60%;
+  float:right;
+  height:100%;
+}

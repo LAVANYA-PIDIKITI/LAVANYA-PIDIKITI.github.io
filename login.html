@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen+Mono&display=swap" rel="stylesheet">
+    <title>Login</title>
+    <style>
+        .detail{
+            background-color: blanchedalmond;
+            align-items: center;
+        }
+    </style>   
+    <script>
+        function validate(){
+            alert("hi");
+            var name = document.getElementById("uname").value;
+            var password = document.getElementById("pwd").value;
+            if(/\d/.test(name))
+            {
+                alert("The name contains symbols apart from alphabets!");
+            }
+            if(name == ""){
+                alert("Name is empty. Please enter a name");
+            }
+            if(password == ""){
+                alert("Password is empty. Please enter a password");
+            }
+
+
+        }
+
+    </script>
+</head>
+<body>
+    <h1>Login page</h1>
+    <form align = "center" class="detail" id="info" onsubmit="validate()">
+        <p>Username</p><input type="text" name="username" id="uname"><br>
+        <p>Password</p><input type="password" name="password" id="pwd"><br>
+        <input type="submit" value="submit" name="submit">
+        <input type="reset" value="clear">
+
+    </form>
+    <p>New login?Then<button> <a href="sign.html">Signup</a></button></p>
+    <a href="index.html"><button>Back to home</button></a>
+</body>
+</html>
