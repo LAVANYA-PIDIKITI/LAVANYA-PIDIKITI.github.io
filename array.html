@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>Array properties</title>
+
+</head>
+<body>
+    <p>The toString() method returns an array as a comma separated string:</p>
+   <b/> <p id="tostring"></p> </b>
+    <p>The join() method joins array elements into a string.</p>
+    <p>It this example we have used " * " as a separator between the elements:</p>
+   <b> <p id="join"></p> </b>
+    <p>The pop() method removes the last element from an array.</p>
+  <b>  <p id="pop1"></p>
+    <p id="pop2"></p> </b>
+    <p>The push() method appends a new element to an array:</p>
+  <b>  <p id="push1"></p>
+    <p id="push2"></p> </b>
+    <p>The splice() method adds new elements to an array:</p>
+  <b>  <p id="sp1"></p>
+    <p id="sp2"></p> </b>
+    <p>The sort() method sorts an array alphabetically:</p>
+  <b>  <p id="sort1"></p>
+    <p id="sort2"></p> </b>
+    <p>The reverse() method reverses the elements in an array.</p>
+    <p>By combining sort() and reverse() you can sort an array in descending order:</p>
+  <b>  <p id="rev1"></p>
+    <p id="rev2"></p> </b>
+
+    <script type="text/javascript">
+        function validate(){
+            alert("hi");
+     }
+    const drinks = ["Coffee", "Soda", "Tea", "Juice"];
+    document.getElementById("tostring").innerHTML = drinks.toString();
+    document.getElementById("join").innerHTML = drinks.join(" * ");
+    document.getElementById("pop1").innerHTML = drinks;
+    drinks.pop();
+    document.getElementById("pop2").innerHTML = drinks;
+    document.getElementById("push1").innerHTML = drinks;
+    drinks.push("Milk");
+    document.getElementById("push2").innerHTML = drinks;
+    document.getElementById("sp1").innerHTML = drinks;
+    drinks.splice(2, 0, "Lemon-juice", "soda");
+    document.getElementById("sp2").innerHTML = drinks;
+    document.getElementById("sort1").innerHTML = drinks;
+    drinks.sort();
+    document.getElementById("sort2").innerHTML = drinks;
+    document.getElementById("rev1").innerHTML = drinks;
+    drinks.sort();
+    drinks.reverse();
+    document.getElementById("rev2").innerHTML = drinks;
+
+    </script>
+</body>
+</html>
