@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Banking System</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+	<style>
+        body{font-family:"Poppins";}
+        .container{
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+	<div class="container">
+		<h1>Simple Transactions</h1>
+		<div class="account">
+			<h2>Account Balance: <span id="balance">0</span></h2>
+			<p>Deposit</p>
+			<p>Deposit Amount:</p>
+			<input type="number" id="deposit">
+			<button onclick="deposit()">Deposit</button><br>
+			<p>Withdraw</p>
+			<p>Withdraw Amount:</p>
+			<input type="number" id="withdraw">
+			<button onclick="withdraw()">Withdraw</button><br>
+			<p>Bank Statement</p>
+    		<button onclick="displayStatement()">Display Statement</button><br><br>
+    		<table id="statement-table"></table>
+		</div>
+	</div>
+	<script src="trans.js"></script>
+	<a href="index.html"><button>Back to home</button></a>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <title>Registration</title>
+    <style>
+        body{font-family:"Poppins";}
+        h1{text-align: center;}
+        #info{
+            text-align: center;
+        }
+    </style>
+
+</head>
+<body >
+    <h1>Bank Account registration</h1>
+    <div>
+    <form class="detail" id="info" onsubmit="return validate()">
+        <p>Name</p><input type="text" name="fname" id="fname"><br>
+        <p>DOB(dd-mm-yyyy)</p><input type="text" id="date" name="date">
+        <p>Phone num</p><input type="text" id="phone" name="phone">
+        <p>Email-id</p><input type="email" id="email" size="100">
+        <p>Username</p><input type="text" name="username" id="uname"><br>
+        <p>Password</p><input type="password" name="password" id="pwd"><br>
+        <p>A password should be between 7 to 16 characters which contain only characters, numeric digits, underscore and first character must be a letter</p>
+        <p>Address</p><textarea id="address" name="address" required></textarea><br>
+        <p>ID type</p>
+        <select id="id-type" name="id-type" required>
+          <option value="">Select ID Type</option>
+          <option value="passport">Passport</option>
+          <option value="driving-license">Driving License</option>
+          <option value="voter-id">Voter ID</option>
+        </select>
+        <p>ID Number</p><input type="text" id="id-number" name="id-number" required><br>
+        <p>ID Proof image (JPEG, JPG, PNG)</p><input type="file" id="id-file" name="id-file" required><br>
+        <p>Aadhar-number</p><input type="text" id="aadhaar" name="aadhaar" required><br>
+        <p>Aadhar image (JPEG, JPG, PNG)</p><input type="file" id="adhaarImage" name="adhaarImage" required><br>
+        <p>PAN-number</p><input type="text" id="pan" name="pan" required><br>
+        <p>PAN image (JPEG, JPG, PNG)</p><input type="file" id="panImage" name="panImage" required><br>
+        <input type="submit" value="submit" name="submit">
+        <input type="reset" value="clear">
+
+    </form>
+    </div>
+    <script src="script.js"></script>
+    <a href="index.html"><button>Back to home</button></a>
+</body>
+</html>
