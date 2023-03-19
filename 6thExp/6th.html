@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Create profile</h1><hr>
+<form action="new" method="post">
+  <label for="id">ID:</label>
+  <input type="text" id="id" name="id"><br>
+
+  <label for="name">Name:</label>
+  <input type="text" id="name" name="name"><br>
+
+  <label for="email">Email:</label>
+  <input type="text" id="email" name="email"><br>
+
+  <label for="pass">Password:</label>
+  <input type="password" id="pass" name="pass"><br>
+
+  <label for="country">Country:</label>
+  <input type="text" id="country" name="country"><br>
+
+  <label for="city">City:</label>
+  <input type="text" id="city" name="city"><br>
+
+  <label for="contact">Contact:</label>
+  <input type="text" id="contact" name="contact"><br>
+
+  <label for="address">Address:</label>
+  <textarea id="address" name="address"></textarea><br>
+
+  <input type="submit" value="Submit">
+</form>
+
+    <h1>Customer profile</h1><hr>    
+    <!--Invoke marklist1 servlet to display all the students' marks-->
+    <a href="./bring">Display all customer details</a><hr>
+    <h1>Alter profile</h1><hr>
+    <form method="get" action="./edit">
+        Name:<input type="text" name="customer_name"></input>
+        Contact:<input type="text" name="customer_contact"></input>
+        <input type="submit" value="Submit"></input>
+    </form> 
+    <h1>Delete profile</h1><hr>
+    <form action="./remove" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"><br><br>
+        <input type="submit" value="Delete">
+    </form>
+
+
+</body>
+</html>
